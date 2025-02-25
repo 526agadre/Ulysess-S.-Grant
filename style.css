@@ -1,35 +1,36 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('images/Background.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; 
 }
+
+
 .navbar {
     background-color: transparent !important; 
     padding: 15px 0;
     box-shadow: none !important; 
     z-index: 10; 
 }
-
 .navbar-brand {
     font-weight: bold;
     font-size: 28px;
     color: black !important;
 }
-
 .navbar-nav .nav-item {
     margin-left: 25px;
 }
-
 .navbar-nav .nav-link {
     color: black !important;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-
 .navbar-nav .nav-link:hover {
     color: #ff8c00;
 }
@@ -87,4 +88,82 @@ body {
 .quote:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+.gallery .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+.media-display {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.media-display .content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.media-display img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+.media-display iframe {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+.media-display .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.hidden {
+    display: none;
+ }
+ .quiz-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }

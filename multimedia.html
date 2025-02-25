@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ulysses S. Grant - Images & Videos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><h3>Ulysses S. Grant - Images & Videos</h3></a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item">
+                            <a href="index.html">
+                                <img src="images/home.png" height="30px" width="30px" alt="Ulysses S. Grant" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid main-content">
+
+    <div class="container">
+       
+        <div class="gallery">
+            <h2 class="text-center">Image Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/Grant_India.jpg" class="card-img-top" alt="Ulysses S. Grant" onclick="showImage('images/Grant_India.jpg')">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/Home_battlefield.jpg" class="card-img-top" alt="Ulysses S. Grant" onclick="showImage('images/Home_battlefield.jpg')">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/Home_Hero_1.jpg" class="card-img-top" alt="Ulysses S. Grant" onclick="showImage('images/Home_Hero_1.jpg')">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/Grant_China.jpg" class="card-img-top" alt="Ulysses S. Grant" onclick="showImage('images/Grant_China.jpg')">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/House_Grantwood_MO.jpg" class="card-img-top" alt="Ulysses S. Grant" onclick="showImage('images/House_Grantwood_MO.jpg')">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/Grant_Hero.jpg" class="card-img-top" alt="Ulysses S. Grant" onclick="showImage('images/Grant_Hero.jpg')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <h2 class="text-center">Video Gallery</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <button class="btn btn-info" onclick="showVideo('https://www.youtube.com/embed/UUeLEaoMRNI')">Watch Video 1</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <button class="btn btn-info" onclick="showVideo('https://www.youtube.com/embed/TJEe6WWC9YA')">Watch Video 2</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mediaDisplay" class="media-display hidden">
+            <div class="content">
+                <span class="close" onclick="closeMedia()">&times;</span>
+                <div id="mediaContent"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
