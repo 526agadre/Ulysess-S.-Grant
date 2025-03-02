@@ -21,7 +21,7 @@ body {
 
 .navbar {
     background-color: transparent !important; 
-    padding: 15px 0;
+    padding: 1px 0;
     box-shadow: none !important; 
     z-index: 10; 
 }
@@ -37,6 +37,7 @@ body {
     color: black !important;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding: 5px 10px;
 }
 .navbar-nav .nav-link:hover {
     color: #ff8c00;
