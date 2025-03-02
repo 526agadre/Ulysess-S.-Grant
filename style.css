@@ -24,6 +24,9 @@ body {
     padding: 15px 0;
     box-shadow: none !important; 
     z-index: 10; 
+    transition: top 0.3s;
+    position: fixed;
+    width: 100%;
 }
 .navbar-brand {
     font-weight: bold;
