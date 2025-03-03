@@ -253,3 +253,6 @@ h1 {
 .panel li span {
     font-weight: bold;
 }
+.custom-home-btn {
+    margin-top: 100px;
+}

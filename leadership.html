@@ -54,24 +54,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="accordion.js"></script>
-    <script>
-        let prevScrollPos = window.scrollY;
- const navbar = document.querySelector(".navbar");
- 
- window.addEventListener("scroll", () => {
-     let currentScrollPos = window.scrollY;
- 
-     if (prevScrollPos < currentScrollPos) {
-         // Scrolling down, hide navbar
-         navbar.style.top = "-60px";
-     } else {
-         // Scrolling up, show navbar
-         navbar.style.top = "0";
-     }
- 
-     prevScrollPos = currentScrollPos;
- });
- 
-     </script>
+
 </body>
 </html>
