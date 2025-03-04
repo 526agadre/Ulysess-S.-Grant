@@ -1,16 +1,11 @@
-// Get all accordion buttons
 var acc = document.getElementsByClassName("accordion");
-
-// Add click event listener for each accordion button
 for (var i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        var panel = this.nextElementSibling; // Get the panel associated with the clicked button
-       
-        // Toggle the panel display (open or close)
+        var panel = this.nextElementSibling; 
         if (panel.style.display === "block") {
-            panel.style.display = "none";  // Close the panel
+            panel.style.display = "none"; 
         } else {
-            panel.style.display = "block";  // Open the panel
+            panel.style.display = "block"; 
         }
     });
 }
